@@ -1051,3 +1051,7 @@ def run() -> None:
 
 if __name__ == "__main__":
     run()
+print("Current directory:", os.getcwd())
+
+for p in Path(".").iterdir():
+    print("FILE:", p)
