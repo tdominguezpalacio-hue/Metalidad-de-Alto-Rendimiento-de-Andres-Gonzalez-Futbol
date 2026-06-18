@@ -13,18 +13,18 @@ CONTACT_PHONE = "+573142961072"
 CONTACT_EMAIL = "afgr840108@gmail.com"
 
 IMAGE_PATHS = [
-    Path(r"Captura de pantalla 2026-06-17 195757.png"),
-    Path(r"Captura de pantalla 2026-06-17 195924.png"),
-    Path(r"Captura de pantalla 2026-06-17 195942.png"),
-    Path(r"Captura de pantalla 2026-06-17 195915.png"),
-    Path(r"Captura de pantalla 2026-06-17 195908.png"),
-    Path(r"Captura de pantalla 2026-06-17 195856.png"),
-    Path(r"Captura de pantalla 2026-06-17 195848.png"),
-    Path(r"Captura de pantalla 2026-06-17 195838.png"),
-    Path(r"Captura de pantalla 2026-06-17 195830.png"),
-    Path(r"Captura de pantalla 2026-06-17 195823.png"),
-    Path(r"Captura de pantalla 2026-06-17 195815.png"),
-    Path(r"Captura de pantalla 2026-06-17 195805.png"),
+    Path(r"Captura de pantalla 2026-06-17 195757 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195924 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195942 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195915 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195908 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195856 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195848 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195838 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195830 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195823 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195815 .png"),
+    Path(r"Captura de pantalla 2026-06-17 195805 .png"),
 ]
 
 
