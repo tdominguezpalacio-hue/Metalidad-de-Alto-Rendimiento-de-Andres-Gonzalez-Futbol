@@ -1000,6 +1000,7 @@ def _image_bytes(index: int) -> tuple[bytes, str]:
 
 
 class AppHandler(BaseHTTPRequestHandler):
+    print("REQUEST:", self.path)
     def do_GET(self):
         path = urlparse(self.path).path
         
