@@ -12,10 +12,8 @@ class AppHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b"HELLO FROM RAILWAY")
 
-print("STARTING")
 server = ThreadingHTTPServer(("0.0.0.0", PORT), AppHandler)
+
 print("LISTENING ON", PORT)
+
 server.serve_forever()
-
-
-
