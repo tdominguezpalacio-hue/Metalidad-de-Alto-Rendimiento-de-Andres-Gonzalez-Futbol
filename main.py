@@ -1005,13 +1005,12 @@ class AppHandler(BaseHTTPRequestHandler):
         
         print("REQUEST RECEIVED:", self.path)
 
-        if path in {"/", "/index.html"}:
-            self.send_response(200)
-            self.send_header("Content-Type", "text/html; charset=utf-8")
-            self.send_header("Cache-Control", "no-store")
-            self.end_headers()
-            self.wfile.write(HTML.encode("utf-8"))
-            return
+       if path in {"/", "/index.html"}:
+    self.send_response(200)
+    self.send_header("Content-Type", "text/plain")
+    self.end_headers()
+    self.wfile.write(b"HELLO FROM RAILWAY")
+    return
 
         if path.startswith("/img/"):
             try:
