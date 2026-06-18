@@ -1002,6 +1002,8 @@ def _image_bytes(index: int) -> tuple[bytes, str]:
 class AppHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = urlparse(self.path).path
+        
+        print("REQUEST RECEIVED:", self.path)
 
         if path in {"/", "/index.html"}:
             self.send_response(200)
