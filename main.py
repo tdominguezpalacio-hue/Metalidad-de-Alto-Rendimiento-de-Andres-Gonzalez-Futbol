@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+import os
+
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
-
 
 HOST = "0.0.0.0"
 PORT = int(os.environ.get("PORT", 8000))
