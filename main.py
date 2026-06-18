@@ -5,8 +5,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 
-HOST = "127.0.0.1"
-PORT = 0
+HOST = "0.0.0.0"
+PORT = int(os.environ.get("PORT", 8000))
 
 CONTACT_PHONE = "+573142961072"
 CONTACT_EMAIL = "afgr840108@gmail.com"
