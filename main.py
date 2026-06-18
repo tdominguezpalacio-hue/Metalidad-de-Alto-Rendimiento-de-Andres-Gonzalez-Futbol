@@ -1000,18 +1000,17 @@ def _image_bytes(index: int) -> tuple[bytes, str]:
 
 
 class AppHandler(BaseHTTPRequestHandler):
-    print("REQUEST:", self.path)
     def do_GET(self):
         path = urlparse(self.path).path
-        
+
         print("REQUEST RECEIVED:", self.path)
 
-       if path in {"/", "/index.html"}:
-    self.send_response(200)
-    self.send_header("Content-Type", "text/plain")
-    self.end_headers()
-    self.wfile.write(b"HELLO FROM RAILWAY")
-    return
+        if path in {"/", "/index.html"}:
+            self.send_response(200)
+            self.send_header("Content-Type", "text/plain")
+            self.end_headers()
+            self.wfile.write(b"HELLO FROM RAILWAY")
+            return
 
         if path.startswith("/img/"):
             try:
@@ -1051,9 +1050,3 @@ def run() -> None:
     server.serve_forever()
 
 
-if __name__ == "__main__":
-    run()
-print("Current directory:", os.getcwd())
-
-for p in Path(".").iterdir():
-    print("FILE:", p)
